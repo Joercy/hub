@@ -1,0 +1,82 @@
+[33mcommit 98d839d4ec29516eeecf3d5447e9e9b65e1461d9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Joercy <38283763+Joercy@users.noreply.github.com>
+Date:   Fri Dec 27 12:37:17 2019 +0800
+
+    first commit
+
+[1mdiff --git a/Github/111.txt b/Github/111.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b13789[m
+[1m--- /dev/null[m
+[1m+++ b/Github/111.txt[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m
+[1mdiff --git a/Github/LeetCodeAnimation-master.zip b/Github/LeetCodeAnimation-master.zip[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cd3edf4[m
+Binary files /dev/null and b/Github/LeetCodeAnimation-master.zip differ
+[1mdiff --git "a/Github/\344\270\244\346\225\260\344\271\213\345\222\214.html" "b/Github/\344\270\244\346\225\260\344\271\213\345\222\214.html"[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b0cd41[m
+[1m--- /dev/null[m
+[1m+++ "b/Github/\344\270\244\346\225\260\344\271\213\345\222\214.html"[m
+[36m@@ -0,0 +1,50 @@[m
+[32m+[m[32m<p>``# LeetCode µÚ 1 ºÅÎÊÌâ£ºÁ½ÊıÖ®ºÍ</p>[m
+[32m+[m[32m<blockquote>[m
+[32m+[m[32m<p>±¾ÎÄÊ×·¢ÓÚ¹«ÖÚºÅ¡¸Îå·ÖÖÓÑ§Ëã·¨¡¹£¬ÊÇ<a href="https://github.com/MisterBooo/LeetCodeAnimation">Í¼½â LeetCode </a>ÏµÁĞÎÄÕÂÖ®Ò»¡£</p>[m
+[32m+[m[32m<p>¸öÈËÍøÕ¾£º<a href="https://www.cxyxiaowu.com">https://www.cxyxiaowu.com</a></p>[m
+[32m+[m[32m<p>ÊÓÆµ½²½â£º<a href="https://www.bilibili.com/video/av51296602">¡¾¸ú×Å³ÌĞòÔ±Ğ¡ÎâÍ¼½â LeetCode ¡¿LeetCode µÚ 1 ºÅÎÊÌâ£ºÁ½ÊıÖ®ºÍ</a></p>[m
+[32m+[m[32m</blockquote>[m
+[32m+[m[32m<p>ÌâÄ¿À´Ô´ÓÚ LeetCode ÉÏµÚ 1 ºÅÎÊÌâ£ºÁ½ÊıÖ®ºÍ¡£ÌâÄ¿ÄÑ¶ÈÎª Easy£¬Ä¿Ç°Í¨¹ıÂÊÎª 45.8% ¡£</p>[m
+[32m+[m[32m<h3>ÌâÄ¿ÃèÊö</h3>[m
+[32m+[m[32m<p>¸ø¶¨Ò»¸öÕûÊıÊı×é <code>nums</code> ºÍÒ»¸öÄ¿±êÖµ <code>target</code>£¬ÇëÄãÔÚ¸ÃÊı×éÖĞÕÒ³öºÍÎªÄ¿±êÖµµÄÄÇ <strong>Á½¸ö</strong> ÕûÊı£¬²¢·µ»ØËûÃÇµÄÊı×éÏÂ±ê¡£</p>[m
+[32m+[m[32m<p>Äã¿ÉÒÔ¼ÙÉèÃ¿ÖÖÊäÈëÖ»»á¶ÔÓ¦Ò»¸ö´ğ°¸¡£µ«ÊÇ£¬Äã²»ÄÜÖØ¸´ÀûÓÃÕâ¸öÊı×éÖĞÍ¬ÑùµÄÔªËØ¡£</p>[m
+[32m+[m[32m<p><strong>Ê¾Àı:</strong></p>[m
+[32m+[m[32m<pre><code>¸ø¶¨ nums = [2, 7, 11, 15], target = 9[m
+[32m+[m
+[32m+[m[32mÒòÎª nums[0] + nums[1] = 2 + 7 = 9[m
+[32m+[m[32mËùÒÔ·µ»Ø [0, 1][m
+[32m+[m[32m</code></pre>[m
+[32m+[m[32m<h3>ÌâÄ¿½âÎö</h3>[m
+[32m+[m[32m<p>Ê¹ÓÃ²éÕÒ±íÀ´½â¾ö¸ÃÎÊÌâ¡£</p>[m
+[32m+[m[32m<p>ÉèÖÃÒ»¸ö map ÈİÆ÷ record ÓÃÀ´¼ÇÂ¼ÔªËØµÄÖµÓëË÷Òı£¬È»ºó±éÀúÊı×é nums¡£</p>[m
+[32m+[m[32m<ul>[m
+[32m+[m[32m<li>Ã¿´Î±éÀúÊ±Ê¹ÓÃÁÙÊ±±äÁ¿ complement ÓÃÀ´±£´æÄ¿±êÖµÓëµ±Ç°ÖµµÄ²îÖµ</li>[m
+[32m+[m[32m<li>ÔÚ´Ë´Î±éÀúÖĞ²éÕÒ record £¬²é¿´ÊÇ·ñÓĞÓë complement Ò»ÖÂµÄÖµ£¬Èç¹û²éÕÒ³É¹¦Ôò·µ»Ø²éÕÒÖµµÄË÷ÒıÖµÓëµ±Ç°±äÁ¿µÄÖµ i</li>[m
+[32m+[m[32m<li>Èç¹ûÎ´ÕÒµ½£¬ÔòÔÚ record ±£´æ¸ÃÔªËØÓëË÷ÒıÖµ i</li>[m
+[32m+[m[32m</ul>[m
+[32m+[m[32m<h3>¶¯»­ÃèÊö</h3>[m
+[32m+[m[32m<p><img src="https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/20181028221055.gif" alt="" /></p>[m
+[32m+[m[32m<h3>´úÂëÊµÏÖ</h3>[m
+[32m+[m[32m<pre><code>// 1. Two Sum[m
+[32m+[m[32m// https://leetcode.com/problems/two-sum/description/[m
+[32m+[m[32m// Ê±¼ä¸´ÔÓ¶È£ºO(n)[m
+[32m+[m[32m// ¿Õ¼ä¸´ÔÓ¶È£ºO(n)[m
+[32m+[m[32mclass Solution {[m
+[32m+[m[32mpublic:[m
+[32m+[m[32m    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) {[m
+[32m+[m[32m        unordered_map&lt;int,int&gt; record;[m
+[32m+[m[32m        for(int i = 0 ; i &lt; nums.size() ; i ++){[m
+[32m+[m[41m       [m
+[32m+[m[32m            int complement = target - nums[i];[m
+[32m+[m[32m            if(record.find(complement) != record.end()){[m
+[32m+[m[32m                int res[] = {i, record[complement]};[m
+[32m+[m[32m                return vector&lt;int&gt;(res, res + 2);[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            record[nums[i]] = i;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32m</code></pre>[m
+[32m+[m[32m<p><img src="https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/blog/fz0rq.png" alt="" /></p>[m
+\ No newline at end of file[m
+[1mdiff --git a/readme.txt b/readme.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3fb6a2f[m
+[1m--- /dev/null[m
+[1m+++ b/readme.txt[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32mLOOK[m
+[32m+[m
